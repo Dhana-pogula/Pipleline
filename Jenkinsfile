@@ -11,11 +11,11 @@ node('master')
        sh label: '', script: 'mvn package'
     }
     
-  stage('continousdeploy') 
-   {
+  //stage('continousdeploy') 
+  // {
        //copying .war file to tomcat server
-      sh label: '', script: 'scp /home/new_home/workspace/ScriptedPipeline/webapp/target/webapp.war ubuntu@172.31.20.10:/opt/apache-tomcat-8.5.54/webapps/testevn10.war'
-    }
+     // sh label: '', script: 'scp /home/new_home/workspace/ScriptedPipeline/webapp/target/webapp.war ubuntu@172.31.20.10:/opt/apache-tomcat-8.5.54/webapps/testevn10.war'
+   // }
    
    
 }
