@@ -3,7 +3,7 @@ node('master')
    
    stage('continousdownload') 
    {
-       git 'https://github.com/selenium-saikrishna/maven.git'
+       git 'https://github.com/Dhana-pogula/Pipleline.git'
     }
     
     stage('continousbuild') 
